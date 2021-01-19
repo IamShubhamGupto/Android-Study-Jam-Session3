@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Pathway6.Pathway6_1Fragment">
+    tools:context=".Pathway6.Pathway62Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,7 +10,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tv6_1"
+            android:id="@+id/tv6_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pathway_6"
@@ -24,18 +22,19 @@
             app:layout_constraintVertical_bias="0.19999999" />
 
         <Button
-            android:id="@+id/plus_bt_6_1"
+            android:id="@+id/plus_bt_6_2"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:text="@string/plus"
-            app:layout_constraintBottom_toTopOf="@+id/display_6_1"
+            app:layout_constraintBottom_toTopOf="@+id/display_6_2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv6_1" />
+            app:layout_constraintTop_toBottomOf="@+id/tv6_2" />
 
         <TextView
-            android:id="@+id/display_6_1"
+            android:id="@+id/display_6_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/zero"
@@ -46,7 +45,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/minus_bt_6_1"
+            android:id="@+id/minus_bt_6_2"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginTop="32dp"
@@ -55,11 +54,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/display_6_1"
+            app:layout_constraintTop_toBottomOf="@+id/display_6_2"
             app:layout_constraintVertical_bias="0.358" />
 
         <Button
-            android:id="@+id/next_bt_6_1"
+            android:id="@+id/next_bt_6_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/next"
@@ -70,7 +69,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.9" />
         <Button
-            android:id="@+id/previous_bt_6_1"
+            android:id="@+id/previous_bt_6_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/previous"
@@ -83,4 +82,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
+</layout>
