@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.studyjamsession3.databinding.FragmentEntryBinding
-import com.example.studyjamsession3.databinding.FragmentPathway61Binding
-import com.example.studyjamsession3.Pathway6.Pathway61Fragment as Pathway61Fragment1
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

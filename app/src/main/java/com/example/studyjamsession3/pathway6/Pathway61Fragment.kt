@@ -1,16 +1,13 @@
-package com.example.studyjamsession3.Pathway6
+package com.example.studyjamsession3.pathway6
 
-import android.icu.number.Precision.increment
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.studyjamsession3.R
-import com.example.studyjamsession3.databinding.FragmentEntryBinding
 import com.example.studyjamsession3.databinding.FragmentPathway61Binding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,6 +34,11 @@ class Pathway61Fragment : Fragment() {
 //
 //    }
     private lateinit var binding: FragmentPathway61Binding
+//    private val _number = MutableLiveData<Int>()
+//    val score: LiveData<Int>
+//        get() = _number
+
+    //private lateinit var viewModel: GameViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

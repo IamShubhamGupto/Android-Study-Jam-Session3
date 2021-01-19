@@ -1,15 +1,16 @@
-package com.example.studyjamsession3.Pathway6
+package com.example.studyjamsession3.pathway6
 
-import android.icu.number.Precision.increment
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.studyjamsession3.R
-import com.example.studyjamsession3.databinding.FragmentPathway61Binding
 import com.example.studyjamsession3.databinding.FragmentPathway62Binding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,6 +36,8 @@ class Pathway62Fragment : Fragment() {
 //        }
 //    }
     private lateinit var binding : FragmentPathway62Binding
+    private lateinit var viewModel: Pathway6ViewModel
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -53,20 +56,34 @@ class Pathway62Fragment : Fragment() {
         binding.previousBt62.setOnClickListener {
             findNavController().navigate(R.id.action_pathway62Fragment2_to_pathway61Fragment)
         }
-        binding.plusBt62.setOnClickListener{increment()}
-        binding.minusBt62.setOnClickListener{decrement()}
+        //binding.plusBt62.setOnClickListener{increment()}
+        //binding.minusBt62.setOnClickListener{decrement()}
+
+        viewModel = ViewModelProvider(this).get(Pathway6ViewModel::class.java)
+        binding.pathway6ViewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
+
+        viewModel.eventBelowZero.observe(viewLifecycleOwner, Observer<Boolean> { isBelowZero ->
+            if (isBelowZero) {
+                belowZero()
+            }
+        })
         return binding.root
     }
 
-    private fun decrement() {
-        var oldval = binding.display62.text.toString().toInt()
-        binding.display62.setText(Integer.toString(oldval-1))
+    private fun belowZero() {
+        Toast.makeText(activity, "Number cannot be below zero", Toast.LENGTH_SHORT).show()
     }
 
-    private fun increment(){
-        var oldval = binding.display62.text.toString().toInt()
-        binding.display62.setText(Integer.toString(oldval+1))
-    }
+//    private fun decrement() {
+//        var oldval = binding.display62.text.toString().toInt()
+//        binding.display62.setText(Integer.toString(oldval-1))
+//    }
+//
+//    private fun increment(){
+//        var oldval = binding.display62.text.toString().toInt()
+//        binding.display62.setText(Integer.toString(oldval+1))
+//    }
 
 //    companion object {
 //        /**

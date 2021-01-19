@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/pathway61Fragment"
-        android:name="com.example.studyjamsession3.Pathway6.Pathway61Fragment"
+        android:name="com.example.studyjamsession3.pathway6.Pathway61Fragment"
         android:label="fragment_pathway6_1"
         tools:layout="@layout/fragment_pathway6_1" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/pathway62Fragment2"
-        android:name="com.example.studyjamsession3.Pathway6.Pathway62Fragment"
+        android:name="com.example.studyjamsession3.pathway6.Pathway62Fragment"
         android:label="fragment_pathway6_2"
         tools:layout="@layout/fragment_pathway6_2" >
         <action

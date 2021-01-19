@@ -11,4 +11,5 @@
     <string name="previous">previous</string>
     <string name="welcome_message">Welcome to Session 3</string>
     <string name="start">Start</string>
+    <string name="number_format">%d</string>
 </resources>
