@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/entryFragment">
+    app:startDestination="@id/entryFragment2">
     <fragment
-        android:id="@+id/entryFragment"
+        android:id="@+id/entryFragment2"
         android:name="com.example.studyjamsession3.EntryFragment"
         android:label="fragment_entry"
         tools:layout="@layout/fragment_entry" >
@@ -20,7 +20,7 @@
         tools:layout="@layout/fragment_pathway6_1" >
         <action
             android:id="@+id/action_pathway61Fragment_to_entryFragment2"
-            app:destination="@id/entryFragment" />
+            app:destination="@id/entryFragment2" />
         <action
             android:id="@+id/action_pathway61Fragment_to_pathway62Fragment2"
             app:destination="@id/pathway62Fragment2" />

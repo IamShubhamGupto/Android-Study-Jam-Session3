@@ -1,5 +1,6 @@
 package com.example.studyjamsession3.Pathway6
 
+import android.icu.number.Precision.increment
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,7 +36,7 @@ class Pathway61Fragment : Fragment() {
 ////        }
 //
 //    }
-    //private lateinit var binding: FragmentPathway61Binding
+    private lateinit var binding: FragmentPathway61Binding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,7 +49,7 @@ class Pathway61Fragment : Fragment() {
 //        findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
 //    }
 //    return binding.root
-    val binding: FragmentPathway61Binding = DataBindingUtil.inflate(
+    binding = DataBindingUtil.inflate(
         inflater, R.layout.fragment_pathway6_1, container, false)
     binding.nextBt61.setOnClickListener {
         findNavController().navigate(R.id.action_pathway61Fragment_to_pathway62Fragment2)
@@ -56,8 +57,20 @@ class Pathway61Fragment : Fragment() {
     binding.previousBt61.setOnClickListener {
         findNavController().navigate(R.id.action_pathway61Fragment_to_entryFragment2)
     }
+    binding.plusBt61.setOnClickListener{increment()}
+        binding.minusBt61.setOnClickListener{decrement()}
     return binding.root
 
+    }
+
+    private fun decrement() {
+        var oldval = binding.display61.text.toString().toInt()
+        binding.display61.setText(Integer.toString(oldval-1))
+    }
+
+    private fun increment(){
+        var oldval = binding.display61.text.toString().toInt()
+        binding.display61.setText(Integer.toString(oldval+1))
     }
 
 //    companion object {
