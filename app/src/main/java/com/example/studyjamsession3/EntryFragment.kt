@@ -44,7 +44,7 @@ class EntryFragment : Fragment() {
             inflater, R.layout.fragment_entry, container, false)
 
         binding.startBt.setOnClickListener {
-            findNavController().navigate(R.id.action_entryFragment_to_pathway6_1Fragment2)
+            findNavController().navigate(R.id.action_entryFragment2_to_pathway61Fragment)
         }
         return binding.root
     }

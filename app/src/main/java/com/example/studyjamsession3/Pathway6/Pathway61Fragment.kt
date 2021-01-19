@@ -51,10 +51,10 @@ class Pathway61Fragment : Fragment() {
     val binding: FragmentPathway61Binding = DataBindingUtil.inflate(
         inflater, R.layout.fragment_pathway6_1, container, false)
     binding.nextBt61.setOnClickListener {
-        findNavController().navigate(R.id.action_pathway6_1Fragment2_to_pathway6_2Fragment2)
+        findNavController().navigate(R.id.action_pathway61Fragment_to_pathway62Fragment2)
     }
     binding.previousBt61.setOnClickListener {
-        findNavController().navigate(R.id.action_pathway6_1Fragment2_to_entryFragment)
+        findNavController().navigate(R.id.action_pathway61Fragment_to_entryFragment2)
     }
     return binding.root
 

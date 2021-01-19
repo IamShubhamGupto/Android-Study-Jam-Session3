@@ -47,7 +47,7 @@ class Pathway62Fragment : Fragment() {
 //            findNavController().navigate(R.id.action_pathway6_1Fragment2_to_pathway6_2Fragment2)
 //        }
         binding.previousBt62.setOnClickListener {
-            findNavController().navigate(R.id.action_pathway6_2Fragment2_to_pathway6_1Fragment2)
+            findNavController().navigate(R.id.action_pathway62Fragment2_to_pathway61Fragment)
         }
         return binding.root
     }

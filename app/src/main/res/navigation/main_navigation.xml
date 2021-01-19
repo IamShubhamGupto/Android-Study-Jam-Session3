@@ -4,34 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
     app:startDestination="@id/entryFragment">
-
     <fragment
         android:id="@+id/entryFragment"
         android:name="com.example.studyjamsession3.EntryFragment"
         android:label="fragment_entry"
         tools:layout="@layout/fragment_entry" >
         <action
-            android:id="@+id/action_entryFragment_to_pathway6_1Fragment2"
-            app:destination="@id/pathway6_1Fragment2" />
+            android:id="@+id/action_entryFragment2_to_pathway61Fragment"
+            app:destination="@id/pathway61Fragment" />
     </fragment>
     <fragment
-        android:id="@+id/pathway6_1Fragment2"
+        android:id="@+id/pathway61Fragment"
         android:name="com.example.studyjamsession3.Pathway6.Pathway61Fragment"
         android:label="fragment_pathway6_1"
         tools:layout="@layout/fragment_pathway6_1" >
         <action
-            android:id="@+id/action_pathway6_1Fragment2_to_pathway6_2Fragment2"
-            app:destination="@id/pathway6_2Fragment2" />
-        <action
-            android:id="@+id/action_pathway6_1Fragment2_to_entryFragment"
+            android:id="@+id/action_pathway61Fragment_to_entryFragment2"
             app:destination="@id/entryFragment" />
+        <action
+            android:id="@+id/action_pathway61Fragment_to_pathway62Fragment2"
+            app:destination="@id/pathway62Fragment2" />
     </fragment>
     <fragment
-        android:id="@+id/pathway6_2Fragment2"
+        android:id="@+id/pathway62Fragment2"
         android:name="com.example.studyjamsession3.Pathway6.Pathway62Fragment"
-        android:label="Pathway6_2Fragment" >
+        android:label="fragment_pathway6_2"
+        tools:layout="@layout/fragment_pathway6_2" >
         <action
-            android:id="@+id/action_pathway6_2Fragment2_to_pathway6_1Fragment2"
-            app:destination="@id/pathway6_1Fragment2" />
+            android:id="@+id/action_pathway62Fragment2_to_pathway61Fragment"
+            app:destination="@id/pathway61Fragment" />
     </fragment>
 </navigation>
