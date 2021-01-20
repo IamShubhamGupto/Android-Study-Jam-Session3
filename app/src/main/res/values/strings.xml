@@ -12,4 +12,6 @@
     <string name="welcome_message">Welcome to Session 3</string>
     <string name="start">Start</string>
     <string name="number_format">%d</string>
+    <string name="add">Add</string>
+    <string name="content_desc">Add a Note</string>
 </resources>
