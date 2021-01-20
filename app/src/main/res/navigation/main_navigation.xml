@@ -33,17 +33,5 @@
         <action
             android:id="@+id/action_pathway62Fragment2_to_pathway61Fragment"
             app:destination="@id/pathway61Fragment" />
-        <action
-            android:id="@+id/action_pathway62Fragment2_to_pathway7Fragment"
-            app:destination="@id/pathway7Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/pathway7Fragment"
-        android:name="com.example.studyjamsession3.pathway7.Pathway7Fragment"
-        android:label="fragment_pathway7"
-        tools:layout="@layout/fragment_pathway7" >
-        <action
-            android:id="@+id/action_pathway7Fragment_to_pathway62Fragment2"
-            app:destination="@id/pathway62Fragment2" />
     </fragment>
 </navigation>

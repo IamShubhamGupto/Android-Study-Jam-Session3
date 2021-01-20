@@ -14,4 +14,10 @@
     <string name="number_format">%d</string>
     <string name="add">Add</string>
     <string name="content_desc">Add a Note</string>
+    <string name="note_hint">Make a note Below</string>
+    <string name="save">Save</string>
+    <string name="tv_note_hint">Start typing here</string>
+    <string name="close">close</string>
+    <string name="previous_note">Previous Note</string>
+    <string name="pathway_7">Pathway 7</string>
 </resources>
